@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #007acc; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm [Your Name], and this is my portfolio.</p>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hi, I'm cardboardbatman. Welcome to my portfolio!</p>
+        </section>
+
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="image1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 cardboardbatman</p>
+    </footer>
+
+    <script src="interact.js"></script>
 </body>
 </html>

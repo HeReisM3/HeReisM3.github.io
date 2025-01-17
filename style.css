@@ -89,7 +89,7 @@ a:hover {
     text-align: center;
     height: 100vh;
     background: /*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
-        url('images/background_cartoon.jpg') center/cover no-repeat;
+        url('images/cartoon_bg2.png') center/cover no-repeat;
     color: #000000;
     padding-top: 70px; /* Prevents navbar from covering the hero content */
 }
@@ -115,7 +115,7 @@ a:hover {
 
 #about h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 #about p {
@@ -134,7 +134,7 @@ a:hover {
 
 #portfolio h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .portfolio-grid {

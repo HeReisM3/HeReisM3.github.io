@@ -5,48 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+        </ul>
+<!-- Social Icons (LinkedIn, GitHub, Email) -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/HeReisM3" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:Saija.Remes@metropolia.fi" class="social-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </nav>
+<!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm cardboardbatman.</h1>
+            <p>Welcome to my portfolio page! Explore my work below.</p>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Hi, I'm cardboardbatman. Welcome to my portfolio!</p>
-        </section>
-
-        <section id="portfolio">
-            <h1>Portfolio</h1>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="image1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I'm a passionate developer and designer who enjoys building projects that challenge me to grow. I have experience in web development and love to create user-friendly, responsive designs.</p>
+        <p>Feel free to check out my projects below!</p>
+    </section>
+<!-- Portfolio Section -->
+    <section id="portfolio">
+        <h1>My Projects</h1>
+        <div class="portfolio-grid">
+            <!-- First Project -->
+            <div class="portfolio-item">
+                <h3>First Project: YouTube Demo</h3>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/vP3By6K5NjM?autoplay=1&loop=1&playlist=vP3By6K5NjM"
+                        title="First Project Video"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="portfolio-item">
-                    <img src="image2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                </div>
+                <p class="project-description">This project demonstrates embedding a YouTube video on a webpage with autoplay and looping features. A great start for learning web embedding techniques!</p>
             </div>
-        </section>
 
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
-        </section>
-    </main>
+            <!-- Second Project -->
+            <div class="portfolio-item">
+                <a href="https://www.gigagames.eu/2023/05/03/game-demo-sophies-friends/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sophie.jpg" alt="Second Project Thumbnail">
+                    <h3>Sophie's Friends</h3>
+                </a>
+                <p class="project-description">My second project was a simple WebGL math game, where our team worked in collaboration with teachers from a school in Malta.
+                    The general idea for this game originally came from one of the young students, when they were asked what kind of educational games they would like for us to make.</p>
+            </div>
+<!-- Latest Project -->
+            <div class="portfolio-item">
+                <a href="https://cardboardbatman.itch.io/pewny-wizard" target="_blank" rel="noopener noreferrer">
+                    <img src="images/pewny.jpg" alt="Latest Project Thumbnail">
+                    <h3>Latest Project: Pewny Wizard</h3>
+                </a>
+                <p class="project-description">A fun wizard-themed game created using HTML5 and JavaScript, featuring dynamic elements and interactive gameplay mechanics.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2025 cardboardbatman</p>
-    </footer>
-
-    <script src="interact.js"></script>
 </body>
 </html>
